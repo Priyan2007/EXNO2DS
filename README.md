@@ -1,4 +1,6 @@
 # EXNO2DS
+## DEVELOPED BY: PRIYAN V
+## REG NO: 212224230211
 # AIM:
       To perform Exploratory Data Analysis on the given data set.
       
