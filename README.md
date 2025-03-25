@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/d43090e4-661f-4424-a7c8-03138ef61866)# EXNO2DS
+# EXNO2DS
 # AIM:
       To perform Exploratory Data Analysis on the given data set.
       
