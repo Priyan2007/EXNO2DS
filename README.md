@@ -122,7 +122,7 @@ sns.heatmap(corr, annot=True)
 ![image](https://github.com/user-attachments/assets/1d969854-162c-495e-86aa-3b7f98f44540)
 ```
 sns.pairplot(df)
-``
+```
 ![image](https://github.com/user-attachments/assets/fe85f59f-9cdf-4385-a79b-3e4b3d4aa968)
 
 
