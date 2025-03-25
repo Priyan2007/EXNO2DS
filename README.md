@@ -49,7 +49,8 @@ df.describe()
 df.shape
 ```
 ![image](https://github.com/user-attachments/assets/2c961098-5e20-412d-a2c6-db2e55f7f2f8)
-## Ctegorical data analysis
+
+## Categorical Data Analysis
 ```
 df.nunique()
 ```
@@ -80,11 +81,49 @@ df.rename(columns={'Sex':'Gender'},inplace=True)
 df
 ```
 ![image](https://github.com/user-attachments/assets/5152d58d-495d-4e9a-acb7-5b58fab2c2e2)
+
 ## Bivariate Analysis
+```
+sns.catplot(x="Gender",col="Survived",kind="count",data=df,height=5,aspect=.7)
+```
+![image](https://github.com/user-attachments/assets/b27fb88b-d65e-44be-9ac5-c5968462d313)
+```
+sns.catplot(x="Survived",hue="Gender",data=df,kind="count")
+```
+![image](https://github.com/user-attachments/assets/dcdebbe3-babd-4c8a-a163-6bd3ac5154d7)
+```
+df.boxplot(column="Age",by="Survived")
+```
+![image](https://github.com/user-attachments/assets/35716570-3d4e-423f-ae71-a0420461c579)
+```
+sns.scatterplot(x=df["Age"],y=df["Fare"])
+```
+![image](https://github.com/user-attachments/assets/96d064e9-3538-47e1-916a-f0b884a877ed)
+```
+sns.jointplot(x="Age",y="Fare",data=df)
+```
+![image](https://github.com/user-attachments/assets/69f655d9-5ae9-49cf-a414-803aa05aca05)
 
-
-
-
+## Multivariate Analysis
+```
+fig, ax1 = plt.subplots(figsize=(8,5))
+plt = sns.boxplot(ax=ax1,x='Pclass',y='Age',hue='Gender',data=df)
+```
+![image](https://github.com/user-attachments/assets/8024fca6-50b4-4e58-be15-9c38a4ed97ae)
+```
+sns.catplot(data=df,col="Survived",x="Gender",hue="Pclass",kind="count")
+```
+![image](https://github.com/user-attachments/assets/9ba54b14-2874-4066-889b-1fe9ab0395a5)
+```
+numeric_df = df.select_dtypes(include=np.number)
+corr = numeric_df.corr()
+sns.heatmap(corr, annot=True)
+```
+![image](https://github.com/user-attachments/assets/1d969854-162c-495e-86aa-3b7f98f44540)
+```
+sns.pairplot(df)
+``
+![image](https://github.com/user-attachments/assets/fe85f59f-9cdf-4385-a79b-3e4b3d4aa968)
 
 
 
@@ -92,4 +131,4 @@ df
 
 
 # RESULT
-        <<INCLUDE YOUR RESULT HERE>>
+We have performed Exploratory Data Analysis on the given data set successfully.
