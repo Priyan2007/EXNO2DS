@@ -36,6 +36,22 @@ df
 df.info()
 ```
 ![image](https://github.com/user-attachments/assets/e99e26de-9426-4b2f-85a3-d90b8ffce2c0)
+```
+df.shape
+```
+![image](https://github.com/user-attachments/assets/e55c4a25-4f3c-458f-a374-98bd1b4224a4)
+```
+df.set_index("PassengerId",inplace=True)
+df.describe()
+```
+![image](https://github.com/user-attachments/assets/6b250da6-81b4-4ec7-a9b2-7c6bc5930af7)
+```
+df.shape
+```
+![image](https://github.com/user-attachments/assets/2c961098-5e20-412d-a2c6-db2e55f7f2f8)
+
+
+
 
 # RESULT
         <<INCLUDE YOUR RESULT HERE>>
