@@ -1,4 +1,4 @@
-# EXNO2DS
+![image](https://github.com/user-attachments/assets/d43090e4-661f-4424-a7c8-03138ef61866)# EXNO2DS
 # AIM:
       To perform Exploratory Data Analysis on the given data set.
       
@@ -49,6 +49,44 @@ df.describe()
 df.shape
 ```
 ![image](https://github.com/user-attachments/assets/2c961098-5e20-412d-a2c6-db2e55f7f2f8)
+## Ctegorical data analysis
+```
+df.nunique()
+```
+![image](https://github.com/user-attachments/assets/8ad8dad4-d234-437d-a629-e4ea8045bc7c)
+```
+df["Survived"].value_counts()
+```
+![image](https://github.com/user-attachments/assets/0acab847-8d9e-4a90-a8af-bfd22194f5cb)
+```
+per=(df["Survived"].value_counts()/df.shape[0]*100).round(2)
+per
+```
+![image](https://github.com/user-attachments/assets/ebfdb587-f0b4-46c8-83e6-6d2cef83057a)
+```
+sns.countplot(data=df,x="Survived")
+```
+![image](https://github.com/user-attachments/assets/27b9dea5-90b8-4962-b12e-e9183061f6a9)
+```
+df
+```
+![image](https://github.com/user-attachments/assets/0070c361-77d0-477b-8db6-e77ccf1996d9)
+```
+df.Pclass.unique()
+```
+![image](https://github.com/user-attachments/assets/dffe47c4-563e-43f4-838f-3cabc351ac3e)
+```
+df.rename(columns={'Sex':'Gender'},inplace=True)
+df
+```
+![image](https://github.com/user-attachments/assets/5152d58d-495d-4e9a-acb7-5b58fab2c2e2)
+## Bivariate Analysis
+
+
+
+
+
+
 
 
 
